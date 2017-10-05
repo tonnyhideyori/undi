@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 
 class NavbarInstance extends Component{  
 render(){ 
@@ -23,5 +22,4 @@ return(
 
 }
 }
-
 export default NavbarInstance;
