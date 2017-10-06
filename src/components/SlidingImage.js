@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Slidingimage extends Component{
 	render(){
 		return(
-<div className="container">
+<div>
   <div id="myCarousel" className="carousel slide" data-ride="carousel">
     <ol className="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
@@ -15,19 +15,19 @@ class Slidingimage extends Component{
     <div className="carousel-inner" role="listbox">
 
       <div className="item active">
-        <img src={require('../images/slide1.jpg')} width="460" height="345" alt='slide1'/>
+        <img src={require('../images/slide1.jpg')} style={{width:'250%'}} alt='slide1'/>
       </div>
 
       <div className="item">
-        <img src={require('../images/slide2.jpg')}  width="460" height="345" alt='slide2'/>
+        <img src={require('../images/slide2.jpg')}  style={{width:'250%'}} alt='slide2'/>
       </div>
     
       <div className="item">
-        <img src={require('../images/slide3.jpg')} width="460" height="345" alt='slide3' />
+        <img src={require('../images/slide3.jpg')} style={{width:'250%'}} alt='slide3' />
       </div>
 
       <div className="item">
-        <img src={require('../images/slide4.jpg')} style={{width:'100%'}} alt='slide4'/>
+        <img src={require('../images/slide4.jpg')} style={{width:'200%'}} alt='slide4'/>
       </div>
    </div>
    

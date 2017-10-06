@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
-import '../css/App.css';
 import '../css/w3.css';
+import '../css/App.css';
 import NavbarInstance from './Navbar';
 import Slidingimage from './SlidingImage';
+import Motto from './Motto'
+import Tabs from './Tabs';
 
 class App extends Component {
   render() {
-    return ( 
+    return (
       <div >
         <NavbarInstance />
         <Slidingimage />
-      </div> 
+        <Motto/>
+        <Tabs/>
+      </div>
     );
   }
 }
