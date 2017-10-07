@@ -58,10 +58,17 @@ div.tab button.active {
 
 /* Style the tab content */
 .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s;
+  opacity: 0;
+  padding: 6px 12px;
+  /*-webkit-animation: fadeEffect 1s;*/
+  /*animation: fadeEffect 1s;*/
+  transition: opacity 500ms ease;
+  /*transition-delay: 0.5s;*/
+}
+
+.tabcontent.loaded {
+  /*animation: fadeEffect 1s;*/
+  opacity: 1;
 }
 
 /* Fade in tabs */
