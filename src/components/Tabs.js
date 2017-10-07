@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import Intro from './Intro';
-
+import Stra from './Stra';
+import Respons from './Respons';
+import Directors from './Directors';
 class Tabs extends Component {
 
   state = {
     tabs: [
       { text: 'Introduction of the company', data: <Intro/> },
-      { text: 'Directors', data: 'foo' },
-      { text: 'Corparate Strategy', data: 'bar' },
-      { text: 'Corparate Responsibilities', data: 'foobar baz' }
+      { text: 'Directors', data: <Directors/> },
+      { text: 'Corparate Strategy', data: <Stra/> },
+      { text: 'Corparate Responsibilities', data: <Respons/> }
     ],
     activeTab: 0,
     loaded: true
