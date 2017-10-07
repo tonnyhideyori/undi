@@ -1,52 +1,51 @@
 import React, { Component } from 'react';
 import Intro from './Intro';
-class Tabs extends Component{
-  constructor(){
-    super();
-    this.tabCompany=this.tabCompany.bind(this);
+
+class Tabs extends Component {
+
+  state = {
+    tabs: [
+      { text: 'Introduction of the company', data: <Intro/> },
+      { text: 'Directors', data: 'foo' },
+      { text: 'Corparate Strategy', data: 'bar' },
+      { text: 'Corparate Responsibilities', data: 'foobar baz' }
+    ],
+    activeTab: 0,
+    loaded: true
+  };
+
+  setActive = (tab) => {
+    const shouldActivate = this.state.tabs.findIndex(tabToFind => tabToFind.text === tab.text);
+    this.setState({ activeTab: shouldActivate, loaded: false }, () => {
+      setTimeout(() => this.setState({ loaded: true}), 250)
+    })
+  };
+
+  render() {
+    const { activeTab, loaded } = this.state;
+    return (
+      <div>
+        <div className="tab">
+          {this.state.tabs.map((tab, index) => {
+            return (
+              <button
+                key={index}
+                className={`tablinks ${activeTab === index ? 'active' : ''}`}
+                onClick={() => this.setActive(tab)}
+              >
+                {tab.text}
+              </button>
+            )
+          })}
+        </div>
+
+        <div className={`tabcontent ${loaded ? 'loaded' : ''}`}>
+          {loaded && this.state.tabs[activeTab].data}
+        </div>
+
+      </div>
+    );
   }
-
-render(){
-return(
-  <div>
-  <div className="tab">
-  <button className="tablinks" onClick={(e)=>this.tabCompany(e, 'Intro')} id="defaultOpen">Introduction of the company</button>
-  <button className="tablinks" onClick={(e)=>this.tabCompany(e, 'Director')} >Directors</button>
-  <button className="tablinks" onClick={(e)=>this.tabCompany(e, 'Strategy')} >Corparate Strategy</button>
-  <button className="tablinks" onClick={(e)=>this.tabCompany(e, 'Corparate')} >Corparate Responsibilities</button>
-</div>
-
-<div id="Introduction" className="tabcontent">
-  <Intro/>
-</div>
-
-<div id="Directors" className="tabcontent">
-
-</div>
-
-<div id="Strategy" className="tabcontent">
-</div>
-<div id="Corparate" className="tabcontent">
-
-</div>
-
-</div>
-);
-
 }
-tabCompany(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-document.getElementById("defaultOpen").Click();
-}
+
 export default Tabs;
