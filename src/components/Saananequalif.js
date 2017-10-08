@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 
-class Saanane_qualif extends Component{
+class Saananequalif extends Component{
   render(){
     return(
       <div>
@@ -19,4 +19,4 @@ He has been working with Undi Consulting Group Ltd and participated in the desin
     );
   }
 }
-export default Saanane_qualif;
+export default Saananequalif;

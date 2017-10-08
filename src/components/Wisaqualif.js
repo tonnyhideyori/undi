@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 
-class Wisa_qualif extends Component{
+class Wisaqualif extends Component{
   render(){
     return(
       <div>
@@ -21,4 +21,4 @@ He is the founding member of UNDI Company Ltd, that was registered in 2003 now t
     );
   }
 }
-export default Wisa_qualif;
+export default Wisaqualif;

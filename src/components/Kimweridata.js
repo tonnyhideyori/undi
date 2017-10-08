@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-  class Kimweri_data extends Component{
+  class Kimweridata extends Component{
     render(){
       return(
         <div>
@@ -16,4 +16,4 @@ import React, {Component} from 'react';
       );
     }
   }
-  export default Kimweri_data;
+  export default Kimweridata;

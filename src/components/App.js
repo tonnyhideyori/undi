@@ -5,7 +5,7 @@ import NavbarInstance from './Navbar';
 import Slidingimage from './SlidingImage';
 import Motto from './Motto'
 import Tabs from './Tabs';
-
+import Specialist from './Specialist'
 class App extends Component {
   render() {
     return (
@@ -14,6 +14,7 @@ class App extends Component {
         <Slidingimage />
         <Motto/>
         <Tabs/>
+        <Specialist/>
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-  class Saanane_data extends Component{
+  class Saananedata extends Component{
     render(){
       return(
         <div>
@@ -17,4 +17,4 @@ import React, {Component} from 'react';
       );
     }
   }
-  export default Saanane_data;
+  export default Saananedata;

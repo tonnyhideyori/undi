@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 
-class Phi_qualif extends Component{
+class Phiqualif extends Component{
   render(){
     return(
       <div>
@@ -19,4 +19,4 @@ He is the founder of UNDI Company Ltd that was registered in 2003, a consulting 
     );
   }
 }
-export default Phi_qualif;
+export default Phiqualif;

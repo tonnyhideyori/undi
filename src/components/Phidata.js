@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-  class Phi_data extends Component{
+  class Phidata extends Component{
     render(){
       return(
         <div>
@@ -16,4 +16,4 @@ import React, {Component} from 'react';
       );
     }
   }
-  export default Phi_data;
+  export default Phidata;

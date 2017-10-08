@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-  class Wisa_data extends Component{
+  class Wisadata extends Component{
     render(){
       return(
         <div>
@@ -16,4 +16,4 @@ import React, {Component} from 'react';
       );
     }
   }
-  export default Wisa_data;
+  export default Wisadata;
