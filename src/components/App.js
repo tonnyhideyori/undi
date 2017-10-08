@@ -14,7 +14,6 @@ class App extends Component {
         <Slidingimage />
         <Motto/>
         <Tabs/>
-        <Specialist/>
       </div>
     );
   }
