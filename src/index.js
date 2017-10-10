@@ -9,7 +9,7 @@ import Projects from './components/Projects'
 
 const Root=()=>{
   return(
-  <BrowserRouter>
+  <BrowserRouter basename="/tonnyhideyori">
     <div>
     <Route exact path="/undi/home" component={App}/>
     <Route path="/undi/skills" component={Skills}/ >
