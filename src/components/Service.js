@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class Service extends Component{
   render(){
     return(
-      <div>
-      <h3 align="center"><i>Consulting Services Provided by the Company:</i></h3>
+      <div className="w3-panel  w3-border-bottom w3-border-blue-grey">
+      <div className="w3-panel  w3-border-bottom w3-border-grey"><h3 align="center"><i>Consulting Services Provided by the Company:</i></h3></div>
 <div className="row">
   <div className="col-sm-3">
     <div className="panel panel-primary">

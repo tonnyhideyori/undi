@@ -1,30 +1,31 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Link,Route } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import App from './App'
 import Skills from './Skills';
 import Projects from './Projects'
-class NavbarInstance extends Component{
-render(){
+const NavbarInstance=()=>{
+
 return(
-  <BrowserRouter basename="/undi">
+
 <nav className="navbar navbar-inverse">
   <div className="container-fluid">
     <div className="navbar-header">
-      <a className="navbar-brand">
+      <Link to='/undi/home'component={App} className="navbar-brand">
       Undi Consulting Group
-      </a>
+      </Link>
     </div>
     <ul className="nav navbar-nav">
-      <li className="active"><Link to="/home" component={App}>Home</Link></li>
-      <li><Link to="/skills" component={Skills}>Skills</Link></li>
-      <li><Link to="/project" component={Projects}>Projects</Link></li>
+      <li className="active">
+      <Link to="/undi/home" component={App}>Home</Link></li>
+      <li><Link to="/undi/skills" component={Skills}>Skills</Link></li>
+      <li><Link to="/undi/project" component={Projects}>Projects</Link></li>
     </ul>
 
   </div>
 </nav>
-</BrowserRouter>
+
   );
 
-}
+
 }
 export default NavbarInstance;

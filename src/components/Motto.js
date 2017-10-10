@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-class Motto extends Component{  
-render(){ 
+class Motto extends Component{
+render(){
 return(
-   <div className="table-responsive">
+   <div className="table-responsive w3-panel w3-border w3-border-red w3-round-xxlarge" style={{background:"rgb(255, 228, 236)"}}>
    <table className="table">
-    <thead>
+    <thead align="center">
     <tr>
     <th>
     Innovation
@@ -31,7 +31,7 @@ return(
     </td>
     </tr>
     </tbody>
-    
+
    </table>
    </div>
 	);

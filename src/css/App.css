@@ -82,4 +82,26 @@ div.tab button.active {
   float: left;
   padding: 6px 10px;
   padding-right: 1px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.floating-box {
+    display: inline-block;
+    width: 50% auto;
+    height: 50% auto;
+    margin: 10px;
+    float: left;
+
+}
+
+.after-box {
+    border: 3px solid red;
+}
+#tab{
+  background-color:rgb(255, 235, 255);
+}
+#foot{
+
+
+   bottom: 0;
 }

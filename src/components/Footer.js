@@ -5,11 +5,16 @@ import Drc from './Drc';
 class Footer extends Component{
   render(){
     return(
-      <footer>
+      <footer id="foot" style={{marginTop:"15px",background:"rgb(255, 196, 255)"}}>
+      <div className="w3-panel w3-border-bottom w3-border-green">
       <Head/>
-      <strong>Branches:</strong>
+      </div>
+      <div className="w3-panel w3-border-bottom w3-border-green">
       <Aru/>
+      </div>
+      <div className="w3-panel">
       <Drc/>
+      </div>
       </footer>
 
     );

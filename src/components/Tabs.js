@@ -27,7 +27,7 @@ class Tabs extends Component {
     const { activeTab, loaded } = this.state;
     return (
       <div>
-        <div className="tab">
+        <div id="tab" className="tab">
           {this.state.tabs.map((tab, index) => {
             return (
               <button

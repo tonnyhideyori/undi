@@ -1,22 +1,22 @@
 import React,{Component} from 'react';
 
-class Udom extends Component{
-  render(){
+const Udom=()=>{
+
     return(
-      <div>
+      <div className="w3-panel w3-border w3-border-red">
       <h4 align="center">College of Education for University of Dodom(UDOM)</h4>
-       <div className="w3-card-2">
-        <img src={require('../images/udom01.jpg' )}style={{width:'50',height:'550'}} />
+       <div id="left" className="floating-box">
+        <img src={require('../images/udom01.jpg' )}style={{width:'51%',height:'550'}} alt='udom01' />
 
      </div>
 
 
-           <div className="w3-card-2">
-            <img src={require('../images/udom02.jpg' )}style={{width:'524',height:'550'}} />
+           <div className="floating-box">
+            <img src={require('../images/udom02.jpg' )}style={{width:'87%',height:'550'}} />
 
          </div>
       </div>
     );
-  }
+
 }
 export default Udom;

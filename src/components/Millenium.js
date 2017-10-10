@@ -1,22 +1,22 @@
 import React,{Component} from 'react';
 
-class Millenium extends Component{
-  render(){
+const Millenium=()=>{
+
     return(
-      <div>
-      <h4 align="center">Mwalimu House</h4>
-       <div className="w3-card-2">
+      <div className="w3-panel w3-border w3-border-red">
+      <h4 align="center">Millenium Tower</h4>
+       <div className="floating-box">
         <img src={require('../images/mtower01.jpg' )}style={{width:'524',height:'550'}} />
 
      </div>
 
 
-           <div className="w3-card-2">
+           <div className="floating-box">
             <img src={require('../images/mtower02.jpg' )}style={{width:'524',height:'550'}} />
 
          </div>
       </div>
     );
-  }
+
 }
 export default Millenium;
