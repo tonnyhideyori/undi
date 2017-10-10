@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router';
 import '../css/w3.css';
 import '../css/App.css';
 import NavbarInstance from './Navbar';
 import Slidingimage from './SlidingImage';
 import Motto from './Motto'
 import Tabs from './Tabs';
-import Specialist from './Specialist'
+import Footer from './Footer'
 class App extends Component {
   render() {
     return (
@@ -14,6 +15,7 @@ class App extends Component {
         <Slidingimage />
         <Motto/>
         <Tabs/>
+        <Footer/>
       </div>
     );
   }
