@@ -15,6 +15,7 @@ const Info=()=>{
             <img src={require('../images/udom04.jpg' )}style={{width:'524',height:'550'}} />
 
          </div>
+         <div className="floating-box"><p>College of Informatics  and Virtual Science  for UDOM (5,000 Students) financed by Parastatal Pensions Fund .</p></div>
       </div>
     );
   }

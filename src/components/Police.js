@@ -15,6 +15,7 @@ class Police extends Component{
             <img src={require('../images/police02.jpg' )}style={{width:'524',height:'550'}} />
 
          </div>
+         <div className="floating-box"><p>Police Barracks Staff Quarters Phase I & II, Financed by NSSF and Phase III financed by PSPF, Dar es Salaam</p></div>
       </div>
     );
   }

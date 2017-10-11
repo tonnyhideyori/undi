@@ -15,6 +15,7 @@ const Udom=()=>{
             <img src={require('../images/udom02.jpg' )}style={{width:'87%',height:'550'}} />
 
          </div>
+         <div className="floating-box"><p>College of Education for University of Dodoma (UDOM) to accommodate 10,000 Students financed by Public Service Pensions Fund (PSPF), Tanzania.</p></div>
       </div>
     );
 

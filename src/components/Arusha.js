@@ -16,6 +16,7 @@ const Arusha=()=>{
             <img src={require('../images/nssf-ar02.jpg' )}style={{width:'524',height:'400'}} />
 
          </div>
+         <div className="floating-box"><p>Proposed 14 storeys NSSF Commercial Complex along Moshi Road in Arusha, financed by national Social Security Fund (NSSF).</p></div>
       </div>
     );
 

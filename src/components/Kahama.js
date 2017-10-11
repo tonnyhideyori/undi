@@ -15,6 +15,8 @@ const Kahama=()=>{
             <img src={require('../images/nssf-kh02.jpg' )}style={{width:'524',height:'550'}} />
 
          </div>
+         <div className="floating-box"><p>Design and Construction supervision to NSSF Regional Office Block (Civil & Structural Engineers)
+           </p></div>
       </div>
     );
 

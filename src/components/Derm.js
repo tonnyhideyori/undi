@@ -12,8 +12,9 @@ const Derm =()=>{
 
            <div className="floating-box">
             <img src={require('../images/derm02.jpg' )}style={{width:'524',height:'550'}} />
-
          </div>
+         
+         <div className="floating-box"><p>Derm Complex, Kijitonyama, Dar es Salaam, Tanzania.</p></div>
       </div>
     );
 

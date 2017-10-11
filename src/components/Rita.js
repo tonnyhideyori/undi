@@ -9,7 +9,7 @@ class Rita extends Component{
                  <img src={require('../images/rita01.jpg' )}style={{width:'523',height:'348'}} />
 
         </div>
-
+      <div className="floating-box"><p>Proposed 30 storeys, RITA Towers, Dar es Salaam. Financed by Registration Insolvency and Trusteeship Agency (RITA).</p></div>
       </div>
     );
   }

@@ -15,7 +15,7 @@ class Mwalimu extends Component{
                    <img src={require('../images/mwalimu02.jpg' )}style={{width:'524',height:'550'}} />
 
                 </div>
-
+  <div className="floating-box"><p>11 Storey Mwalimu House, Ilala, Dar es Salaam. For Tanzania Teachers Union.</p></div>
       </div>
     );
   }

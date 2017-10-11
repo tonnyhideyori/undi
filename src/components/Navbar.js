@@ -10,15 +10,15 @@ return(
 <nav className="navbar navbar-inverse">
   <div className="container-fluid">
     <div className="navbar-header">
-      <Link to='/undi/home'component={App} className="navbar-brand">
+      <Link to='/'component={App} className="navbar-brand">
       Undi Consulting Group
       </Link>
     </div>
     <ul className="nav navbar-nav">
       <li className="active">
-      <Link to="/undi/home" component={App}>Home</Link></li>
-      <li><Link to="/undi/skills" component={Skills}>Skills</Link></li>
-      <li><Link to="/undi/project" component={Projects}>Projects</Link></li>
+      <Link to="/" component={App}>Home</Link></li>
+      <li><Link to="/skills" component={Skills}>Skills</Link></li>
+      <li><Link to="/project" component={Projects}>Projects</Link></li>
     </ul>
 
   </div>
